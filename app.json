@@ -3,6 +3,7 @@
     "name": "cyware",
     "slug": "cyware",
     "version": "1.0.0",
+    "scheme": "cyware",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,10 +22,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.j3j.cyware"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "21ae00d6-66d4-4fb2-9cdd-24d036c24a2c"
+      }
     }
   }
 }
