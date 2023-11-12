@@ -10,6 +10,13 @@ import Slider from '../Components/Slider'
 import VideoCourseList from '../Components/VideoCourseList'
 import CourseList from '../Components/CourseList'
 import { ScrollView } from 'react-native'
+import InfoCard from '../Components/InfoCard'
+import GridView from './GridView'
+import AccordionList from '../Components/AccordionList'
+import SecurityScore from '../Components/SecurityScore'
+import NewsCard from '../Components/NewsCard'
+import CyberGames from '../Components/CyberGames'
+import Slidera from '../Components/compon/Slider'
 
 
 
@@ -21,10 +28,17 @@ export default function Home() {
     <ScrollView style={{padding:20}}>
         <WelcomeHeader/>
         <SearchBar/>
+        {/* <InfoCard/> */}
         <Slider/>
+        <Slidera />
+        <GridView />
+        <AccordionList />  
         <VideoCourseList/>
-        <CourseList type={'basic'} />
-        <CourseList type={'advance'} />
+        <SecurityScore />
+        <NewsCard />
+        <CyberGames />
+        {/* <CourseList type={'basic'} />
+        <CourseList type={'advance'} /> */}
         <View style={{height:100}}> 
            <Button title='Logout' onPress={()=>{Services.Logout(); setUserData(null)}} />
         </View>

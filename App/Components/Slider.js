@@ -12,14 +12,14 @@ export default function Slider() {
       },[])
   
       const getSlider=async()=>{
-        const result=(await GlobalApi.getSlider()).data;
+        const result=(await GlobalApi.getSlider())?.data;
        
         const resp=result.data.map((item)=>({
             id:item.id,
             name:item.attributes.Name,
             image:item.attributes.image.data.attributes.url
         }))
-      //  console.log(resp)
+        //  console.log(resp)
         setSlider(resp)
       }
   return (
@@ -30,14 +30,16 @@ export default function Slider() {
         showsHorizontalScrollIndicator={false}
         key={slider.id}
         renderItem={({item})=>(
-            <View>
+            <View style={{position:'relative'}}>
                 <Image source={{uri:item.image}} 
-                style={{width:Dimensions.get('screen').width*0.87
-                    ,height:150,borderRadius:10,marginRight:15}}
+                style={{width:Dimensions.get('screen').width*0.9
+                    ,height:170,borderRadius:10,marginRight:15}}
                 />
+                <Text style={{fontSize:54,fontWeight:'bold',color: "gold", position:'absolute', bottom:0, margin:10}}>{item.name}</Text>
             </View>
         )}
       />
     </View>
+
   )
 }

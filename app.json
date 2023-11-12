@@ -16,14 +16,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.j3j.cyware",
+      "googleServicesFile":"./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.j3j.cyware"
+      "package": "com.j3j.cyware",
+      "googleServicesFile":"./google-services.json"
+
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +36,7 @@
       "eas": {
         "projectId": "21ae00d6-66d4-4fb2-9cdd-24d036c24a2c"
       }
-    }
+    },
+    "plugins": ["@react-native-firebase/app"]
   }
 }

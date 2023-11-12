@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "885118015985",
+    "project_id": "cyware-399807",
+    "storage_bucket": "cyware-399807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885118015985:android:ef380d7ce19bdec4154c50",
+        "android_client_info": {
+          "package_name": "com.j3j.cyware"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885118015985-tcsqtr922i2gvfp18qh6pv4euo00q3nl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.j3j.cyware",
+            "certificate_hash": "2f5303d476c3b6dba9f7f117120c6a87076992b1"
+          }
+        },
+        {
+          "client_id": "885118015985-gloqoa2bil267f23ab59rsgv22663llj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCapQIdBmYcGUBGrKfIW7io0b2MEHP925g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885118015985-gloqoa2bil267f23ab59rsgv22663llj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
